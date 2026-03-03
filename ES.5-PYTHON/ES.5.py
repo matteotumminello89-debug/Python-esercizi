@@ -1,20 +1,24 @@
-def rettangolo(scelta, base, altezza):
-    if scelta == "area":
-        risultato = base * altezza
-        print("L'area del rettangolo è:", risultato)
-    elif scelta == "perimetro":
-        risultato = 2 * (base + altezza)
-        print("Il perimetro del rettangolo è:", risultato)
+def area_rettangolo(base, altezza):
+    return base * altezza
+
+def perimetro_rettangolo(base, altezza):
+    return 2 * (base + altezza)
+
+print("Cosa vuoi calcolare?")
+print("1. Area del rettangolo")
+print("2. Perimetro del rettangolo")
+scelta = input("Inserisci 1 o 2: ")
+
+if scelta == "1" or scelta == "2":
+
+    b = float(input("Inserisci la base del rettangolo: "))
+    a = float(input("Inserisci l'altezza del rettangolo: "))
+
+    if scelta == "1":
+        area = area_rettangolo(b, a)
+        print(f"L'area del rettangolo è: ", area)
     else:
-        print("Scelta non valida. Devi scrivere 'area' oppure 'perimetro'.")
-
-
-# --- Prima decido cosa voglio calcolare ---
-scelta = input("Cosa vuoi calcolare (area o perimetro)? ")
-
-if scelta != "area" and scelta != "perimetro":
-    print("Errore: scelta non valida.")
+        perimetro = perimetro_rettangolo(b, a)
+        print(f"Il perimetro del rettangolo è: ", perimetro)
 else:
-    base = float(input("Inserisci la base: "))
-    altezza = float(input("Inserisci l'altezza: "))
-    rettangolo(scelta, base, altezza)
+    print("Scelta non valida. Scegli 1 o 2.")

@@ -1,12 +1,13 @@
-def somma_fino_a_N(N):
+def somma_fino_a(N):
     somma = 0
-    for i in range(0, N + 1):
+    for i in range(N + 1):
         somma += i
-    print("La somma dei numeri da 0 a", N, "è:", somma)
+    return somma
 
+numero = int(input("Inserisci un numero intero positivo: "))
 
-# --- Inserimento da console ---
-N = int(input("Inserisci un numero N: "))
-
-# --- Chiamata della funzione ---
-somma_fino_a_N(N)
+if numero > 0:
+    ris = somma_fino_a(numero)
+    print(f"La somma dei numeri da 1 a {numero}: {ris}")
+else:
+    print("Il numero deve essere positivo")
