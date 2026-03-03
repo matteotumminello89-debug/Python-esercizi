@@ -1,13 +1,21 @@
-def somma_dispari(N):
+def somma_fino_a(N):
     somma = 0
-    for i in range(0, N + 1):
-        if i % 2 != 0:   # numero dispari
+    for i in range(N + 1):
+        if isDispari(i):
             somma += i
-    print("La somma dei numeri dispari da 0 a", N, "è:", somma)
+    return somma
 
+def isDispari(N):
+    tmp = N % 2
+    if tmp == 0:
+        return False
+    else:
+        return True
 
-# --- Inserimento da console ---
-N = int(input("Inserisci un numero N: "))
+numero=int(input("Inserisci un numero intero positivo: "))
 
-# --- Chiamata della funzione ---
-somma_dispari(N)
+if numero > 0:
+    ris = somma_fino_a(numero)
+    print(f"La somma dei numeri dispari da 1 a {numero}: {ris}")
+else:
+    print("Il numero deve essere positivo")
