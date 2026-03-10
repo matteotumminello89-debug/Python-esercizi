@@ -11,3 +11,5 @@ if numero > 0:
     print(f"La somma dei numeri da 1 a {numero}: {ris}")
 else:
     print("Il numero deve essere positivo")
+
+print("fine1")
