@@ -21,3 +21,5 @@ def trova_minore():
 
 # Esempio di utilizzo
 print("Il numero minore è:", trova_minore())
+
+print("fine")
