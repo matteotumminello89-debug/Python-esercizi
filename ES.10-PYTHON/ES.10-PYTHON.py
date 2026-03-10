@@ -19,3 +19,6 @@ def trova_minore_manuale():
 
 # Esempio di utilizzo
 print("Il numero minore è:", trova_minore_manuale())
+
+
+print('fine')
