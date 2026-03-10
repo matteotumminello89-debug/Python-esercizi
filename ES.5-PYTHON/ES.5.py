@@ -22,3 +22,5 @@ if scelta == "1" or scelta == "2":
         print(f"Il perimetro del rettangolo è: ", perimetro)
 else:
     print("Scelta non valida. Scegli 1 o 2.")
+
+print("fine1")
