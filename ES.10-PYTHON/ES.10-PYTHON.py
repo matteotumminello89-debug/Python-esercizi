@@ -1,23 +1,15 @@
-def trova_minore_manuale():
-    numeri = []
+def trova_il_minimo(lista_numeri):
+    return min(lista_numeri)
 
-    # Chiedo all'utente di inserire 10 numeri interi
-    for i in range(10):
+n = int(input("Quanti numeri vuoi inserire? "))
+
+if n > 0:
+    numeri = []
+    for i in range(n):
         numero = int(input(f"Inserisci il numero {i+1}: "))
         numeri.append(numero)
 
-    # Stampo i numeri inseriti
-    print("Numeri inseriti:", numeri)
-
-    # Trovo il valore minimo
-    minore = numeri[0]
-    for n in numeri:
-        if n < minore:
-            minore = n
-
-    return minore
-
-# Esempio di utilizzo
-print("Il numero minore è:", trova_minore_manuale())
-
-print("fine1")
+    valore_minimo = trova_il_minimo(numeri)
+    print(f"Il numero minimo è: {valore_minimo}")
+else:
+    print("Il numero deve essere maggiore di zero.")
