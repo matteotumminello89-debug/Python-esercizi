@@ -37,3 +37,5 @@ if ripetute:
         print(f"- {p}")
 else:
     print("Nessuna parola ripetuta.")
+
+print("fine")
