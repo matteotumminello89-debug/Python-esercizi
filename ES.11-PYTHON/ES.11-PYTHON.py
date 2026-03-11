@@ -20,3 +20,4 @@ print("\nParole che iniziano per vocale:")
 for parola in parole:
     if parola[0] in vocali:
         print(parola)
+print("fine")
